@@ -16,7 +16,9 @@
   <% @user.microposts.each do |micropost| %>
     <p>
       <strong> - Content:</strong>
-      <%= micropost.content%>
+      <td><%= micropost.created_at %></td>
+      <td><%= micropost.content %></td>
+      <%= %>
     </p>
   <% end %>
 </p>
